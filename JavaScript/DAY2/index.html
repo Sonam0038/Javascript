@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let age = prompt('Enter your age');
+        // if (age>=0 && age <8) {
+        //     //  console.log("you are kid");
+        //     document.writeln("you are kid")
+        // }else if(age>=8 && age <18){
+        //     // console.log("you are teenager");
+        //     document.writeln("you are teenager")
+        // }else if(age>=18 && age<45){
+        //     // console.log("you are young");
+        //     document.writeln("you are young")
+        // } else{
+        //     // console.log("you are adult");
+        //     document.writeln("you are adult")
+        // }
+
+
+        const choice = Number(prompt("Enter you choice 1. deposit , 2 withdrwa , 3 pin change"));
+        switch (choice) {
+            case 1:
+                document.writeln("deposit successfully")
+                break;
+             case 2:
+                document.writeln("wothdraw successfully")
+                break;
+            case 3:
+                document.writeln("pin change successfully")
+                break;
+            default:
+                document.writeln("wrong choice")
+                break;
+        }
+    </script>
+</body>
+</html>

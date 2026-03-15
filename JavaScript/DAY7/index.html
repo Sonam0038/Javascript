@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form store  -->
+    <form action="" autocomplete="on">
+      Email :<input type="text" placeholder="Enter Email" id="email" /> <br />
+      Password :
+      <input type="password" placeholder="Enter Password" id="pass" /> <br />
+      <button id="btn">Submit</button> <br />
+      <br /><br />
+
+      GetDataByEmail :<input
+        type="text"
+        placeholder="Enter Email"
+        id="email1"
+      />
+      <br />
+      <button id="btn2">GetData</button>
+
+      <p id="result"></p>
+    </form>
+
+    <script>
+      const btn1 = document.getElementById("btn");
+      btn1.onclick = function () {
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("pass").value;
+
+        // method  of the localstorage
+        window.localStorage.setItem(email, password);
+        alert("Data saved Succeessfully ");
+      };
+
+      const btn2 = document.getElementById("btn2");
+      btn2.onclick = function (event) {
+        event.preventDefault();
+        const email2 = document.getElementById("email1").value;
+
+        // get method of the local
+        const data = window.localStorage.getItem(email2);
+
+        document.getElementById("result").innerText = data;
+      };
+    </script>
+  </body>
+</html>
