@@ -24,8 +24,8 @@
 //     console.log("hy i am declaration function");
 // }
 
-// demo1()
-// let demo1 = function(){
-//     console.log("hy i am function expression");
-// }
+demo1()
+let demo1 = function(){
+    console.log("hy i am function expression");
+}
 

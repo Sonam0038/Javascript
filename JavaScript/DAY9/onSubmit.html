@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- onsubmit example -->
+ <form onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Enter Name" id="username"> <br>
+        <input type="password" placeholder="Enter password" id="pass"> <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+            const handleSubmit =(e)=>{
+                 e.preventDefault(); // prevent the html form , refresh
+
+                  const username = document.getElementById("username").value
+                const password = document.getElementById("pass").value
+
+                window.localStorage.setItem(username,password);
+                alert("Data saved to localStorage ");
+
+            }
+    </script>
+</body>
+</html>

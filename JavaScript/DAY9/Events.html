@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Submit</button>
+
+    <button id="omo">onMouseOver</button>
+
+    <input type="text" id="input1">
+
+    <button id="otp">OTP</button>
+
+    <textarea name="" id="ta"></textarea>
+    <button id="btn1">ColorChange</button>
+
+    <button id="ael">addEventListener</button>
+    
+
+    <script>
+        const btn = document.getElementById("btn");
+        btn.onclick = function(e){
+            document.writeln("hy i'm onclick event")
+        }
+
+    //    const omo = document.getElementById("omo")
+    //    omo.onmouseover = function(){
+    //        omo.style.backgroundColor = "red"
+    //    }
+
+    //    omo.onmouseleave = function(){
+    //        omo.style.backgroundColor = "blue"
+    //    }
+
+    //  omo.onmousemove = function(){
+    //        omo.style.backgroundColor = "blue"
+    //    }
+
+            //   const input1 = document.getElementById("input1")
+            //   input1.onkeypress = function(){
+            //      document.writeln("hy i am onKeyPress")
+            //   }
+
+            //    input1.onkeydown = function(){
+            //      document.writeln("hy i am onKeyDown")
+            //   }
+
+            //  input1.onkeyup = function(){
+            //      document.writeln("hy i am onKeyUp")
+            //   }
+
+             // Generate the otp on the button click
+            // const otp = document.getElementById("otp")
+            // otp.onclick = function(e){
+            //     const num= Math.floor(Math.random()*10000); // decimal 
+            //     alert(`Your otp is ${num}`)
+            // }
+
+             // color change based on the number 
+            // const btn2 = document.getElementById("btn1")
+            // btn2.onclick = function(e){
+            //      const ta = document.getElementById("ta")
+            //      const num= Math.floor(Math.random()*10000);
+            //      ta.style.backgroundColor =  `#${num}`
+            //     //  ta.style.backgroundColor = "red"
+            // }
+
+
+            document.getElementById("ael").addEventListener("keypress",()=>{
+                console.log("hy i am addEventListener");
+                document.writeln("iam ")
+            })
+
+
+    </script>
+</body>
+</html>
